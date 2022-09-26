@@ -1,3 +1,37 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "alias": {
+          "map": [
+            ["@components/*", "components/*"],
+            ["@images", "public/*"],
+            ["@/pages/*", "pages/*"],
+            ["@/styles/*", "styles/*"]
+          ],
+          "extensions": [".js", ".jsx"]
+        }
+      }
+    }
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-props-no-spreading": 0,
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "indent": "error",
+    "curly": ["error", "all"],
+    "max-len": ["error", { "code": 80, "ignoreUrls": true }],
+    "no-confusing-arrow": ["error", { "allowParens": false }]
+  }
 }
