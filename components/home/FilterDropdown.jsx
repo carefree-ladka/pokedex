@@ -19,7 +19,12 @@ export default function FilterDropdown({
           <h2 className="mb-2 w-[72px] h-[29px] text-[#2E3156] font-extrabold text-[25px] leading-7">
             Filters
           </h2>
-          <button type="button" className="pr-2" onClick={handleFilterDropdown}>
+          <button
+            type="button"
+            className="pr-2"
+            onClick={handleFilterDropdown}
+            aria-label="filterClose button"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

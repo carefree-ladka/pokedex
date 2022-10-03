@@ -1,6 +1,12 @@
 /* eslint-disable import/no-named-as-default */
-import { configureStore } from "@reduxjs/toolkit"
+import { combineReducers, configureStore } from "@reduxjs/toolkit"
 import pokemonReducer from "./pokemonSlice"
+
+const commonReducer = () => ({
+  pokemon: pokemonReducer,
+})
+
+export const rootReducer = combineReducers(commonReducer())
 
 const store = configureStore({
   reducer: {

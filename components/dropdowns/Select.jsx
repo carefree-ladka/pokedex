@@ -123,6 +123,7 @@ export default function Select({
                   : ""
               }`}
               role="listbox"
+              aria-labelledby="options"
             >
               {options.map((selected) => (
                 <div

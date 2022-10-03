@@ -31,6 +31,7 @@ export default function Home({
 
   useEffect(() => {
     !typesForSmallDevices && setIsFilterDropdownOpen(true)
+    typesForSmallDevices && setIsFilterDropdownOpen(false)
   }, [typesForSmallDevices])
 
   useEffect(() => {
@@ -99,8 +100,7 @@ export default function Home({
     activeFilter && handleFilter()
   }, [types, gender])
 
-  const handleFilterDropdown = (event) => {
-    // event.preventDefault()
+  const handleFilterDropdown = () => {
     setIsFilterDropdownOpen((prev) => !prev)
   }
 

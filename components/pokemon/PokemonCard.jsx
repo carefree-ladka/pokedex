@@ -34,7 +34,10 @@ export default function PokemonCard({ pokemons, showModal, colors }) {
               />
             </div>
             <div className="pb-2 flex flex-col items-center">
-              <p className="text-[#2E3156] text-md font-semibold leading-6">
+              <p
+                className="text-[#2E3156] text-md font-semibold leading-6"
+                data-testid="name"
+              >
                 {toUpperCase(pokemon.name)}
               </p>
               <span className="align-center- text-[#2E3156] font-normal text-md">

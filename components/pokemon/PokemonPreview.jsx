@@ -84,6 +84,7 @@ export default function PokemonPreview({ close }) {
                     type="button"
                     onClick={close}
                     className="absolute leading-[35px] top-11 sm:top-1"
+                    aria-label="close button"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

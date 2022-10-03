@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-nested-ternary */
 import React, { useEffect, useRef, useState } from "react"

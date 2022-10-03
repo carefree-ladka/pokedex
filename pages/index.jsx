@@ -7,7 +7,7 @@ import SuspenseLayout from "@/components/common/SuspenseLayout"
 const Home = dynamic(() => import("@/components/home/Home"), {
   suspense: true,
 })
-const Pokemon = dynamic(() => import("@/components/common/Pokemon"), {
+const Pokemon = dynamic(() => import("@/components/pokemon/Pokemon"), {
   suspense: true,
 })
 
@@ -25,7 +25,8 @@ export default function IndexPage() {
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
         />
-        <link rel="icon" href="/favicon.ico" />
+
+        <link rel="icon" href="/pokedex.ico" />
       </Head>
       <div>
         <SuspenseLayout>

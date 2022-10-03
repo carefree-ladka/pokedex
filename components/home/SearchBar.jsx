@@ -48,6 +48,7 @@ export default function SearchBar({
             type="button"
             className="flex items-center justify-center w-[76.67px] h-[57.5px] bg-[#2E3156] rounded-lg text-[#fff]"
             onClick={handleFilterDropdown}
+            aria-label="filter button"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
