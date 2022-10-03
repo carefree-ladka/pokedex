@@ -7,6 +7,6 @@ describe("PokemonCard renders", () => {
   test("pokemon names present on screen", async () => {
     const { findByTestId } = renderWithProvider(<PokemonCard />)
     const pokemon = { name: "Bulbasaur", id: 1 }
-    expect(findByTestId("name")).toBeInTheDocument()
+    expect(findByTestId(pokemon.name)).toBeInTheDocument()
   })
 })
