@@ -1,15 +1,20 @@
+/* eslint-disable max-len */
+import Divider from "@/components/common/Divider"
+
 export default function Navbar() {
   return (
-    <header className="relative">
+    <header className="mt-8 sm:pl-[92px]">
       <nav>
-        <h1 className="text-2xl font-semibold text-[#2E3156] inline-block">
-          Pokédex
-        </h1>
-        <span className="after:inline-block after:absolute after:content-[] after:w-1 after:h-2 after:bg-[#5D5F7E]" />
-        <span className="text-[20px] text-[#5D5F7E] font-[500] leading-6">
-          Search for any Pokémon that exists on the planet
-        </span>
+        <div className=" flex flex-col pl-6 sm:flex-row  sm:items-center">
+          <h1 className="text-[30px] w-[128px] pb-4 font-bold text-[#2E3156] leading-6 tracking-wide inline-block">
+            Pokédex
+          </h1>
+          <hr className="w-[318px] sm:w-[53px] sm:rotate-90" />
+          <span className="text-[16px] w-[318px] pb-4 pt-2 text-[#5D5F7E] font-[500] tracking-normal leading-6 sm:w-[439px]  ">
+            Search for any Pokémon that exists on the planet
+          </span>
+        </div>
       </nav>
     </header>
-  );
+  )
 }

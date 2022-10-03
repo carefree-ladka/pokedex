@@ -17,7 +17,8 @@
             ["@components/*", "components/*"],
             ["@images", "public/*"],
             ["@/pages/*", "pages/*"],
-            ["@/styles/*", "styles/*"]
+            ["@/styles/*", "styles/*"],
+            ["@common/*", "common/*"]
           ],
           "extensions": [".js", ".jsx"]
         }
@@ -26,12 +27,17 @@
   },
   "plugins": ["react"],
   "rules": {
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "no-console": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
     "react/jsx-props-no-spreading": 0,
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "indent": "error",
     "curly": ["error", "all"],
-    "max-len": ["error", { "code": 80, "ignoreUrls": true }],
+    "max-len": ["error", { "code": 120, "ignoreUrls": true }],
     "no-confusing-arrow": ["error", { "allowParens": false }]
   }
 }

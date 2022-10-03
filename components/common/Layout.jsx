@@ -1,11 +1,11 @@
-import React from "react";
-import Navbar from "@/components/Navbar/Navbar";
+import React from "react"
+import Navbar from "@/components/navbar/Navbar"
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="w-[390px] container  mx-auto sm:w-[1512px] sm:mx-auto">
       <Navbar />
-      <main className="container max-w-2xl mx-auto">{children}</main>
-    </>
-  );
+      <main>{children}</main>
+    </div>
+  )
 }

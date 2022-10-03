@@ -1,12 +1,18 @@
-import Layout from "components/common/Layout"
-import "styles/globals.css"
+/* eslint-disable import/order */
+import Layout from "@/components/common/Layout"
+import "@/styles/globals.css"
+import { Provider } from "react-redux"
+import store from "store/store"
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
+  // const { store, props } = wrapper.useWrappedStore(rest)
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Provider store={store}>
+      {/* <PokemonState> */}
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+      {/* </PokemonState> */}
+    </Provider>
   )
 }
-
-export default MyApp
